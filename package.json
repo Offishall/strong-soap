@@ -31,7 +31,6 @@
     "lib": "./lib"
   },
   "scripts": {
-    "postinstall": "husky install",
     "build": "babel src --source-maps --out-dir=lib",
     "prepublishOnly": "npm run build",
     "toc": "doctoc Readme.md --github --maxlevel 3",
