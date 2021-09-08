@@ -869,9 +869,11 @@ function parseValue(text, descriptor) {
 }
 
 function toXmlDate(date) {
-  date = new Date(date);
+  // Dirty fix : we handle date as string directly
+  return date;
+  /*date = new Date(date);
   var isoStr = date.toISOString();
-  return isoStr.split('T')[0] + 'Z';
+  return isoStr.split('T')[0] + 'Z';*/
 }
 
 function toXmlTime(date) {
